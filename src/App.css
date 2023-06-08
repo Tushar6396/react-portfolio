@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --x-color: #0ef;
+  --header-color: #131312;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.active {
+  color: var(--x-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 15px;
+  background-color: var(--header-color);
   color: white;
+  box-shadow: 0 0 1 rem var(--bg-color);
+  height: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.header h2{
+    background-color: var(--header-color);
+    line-height: 2rem;
+    cursor: default;
+    font-weight: 600;
+    margin-left: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.folio{
+  background-color: var(--header-color);
+  color: var(--x-color);
 }
+
+.navbar{
+  background-color: var(--header-color);
+  margin-right: 1rem;
+}
+
+.navbar a{
+  background-color: var(--header-color);
+  padding: 5px;
+  transition: 0.3s;
+  margin-left: 1rem;
+}
+
+.navbar a:hover{
+  color: var(--x-color);
+}
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+.home-content{
+  max-width: 50%;
+  padding: 10px;
+  margin-left: 3rem;
+}
+
+.home-content h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.image{
+  max-width: 40%;
+}
+
+.image img{
+  max-width: 80%;
+  max-height: 80%;
+  border: 2px solid var(--x-color);
+  outline: none;
+  border-radius: 50%;
+  box-shadow: 0 0 2rem var(--x-color);
+}
+
+span {
+  color: var(--x-color);
+}
+
+.home-content p {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: 1px solid var(--x-color);
+  border-radius: 50%;
+  margin: 1rem 1rem 2rem 0;
+  font-size: 1rem;
+  color: var(--x-color);
+  transition: 0.3s ease;
+}
+
+.social-media a i{
+  color: var(--x-color);
+  background: var(--bg-color);
+}
+
+.social-media a:hover {
+  color: var(--bg-color);
+  background: transparent;
+  background: var(--x-color);
+  box-shadow: 0 0 1rem var(--x-color);
+}
+
