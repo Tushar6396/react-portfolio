@@ -15,9 +15,9 @@ export default function Header(){
                     <a href="#services">
                         <NavLink to="/services">Services</NavLink>
                     </a>
-                    <a href="#projects">
-                        <NavLink to="/projects">Projects</NavLink>
-                    </a>
+                    {/* <a href="#projects">
+                        <NavLink to="/projects">Projects</NavLink> */}
+                    {/* </a> */}
                     <a href="#contact">
                         <NavLink to="/contact">Contact</NavLink>
                     </a>
