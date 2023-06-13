@@ -31,8 +31,7 @@ export default function Contact(){
         onSubmit
     })
     return(
-        <>
-            <section className="contact">
+            <section className="contact" style={{ overflowY: 'auto', maxHeight: '100vh' }}>
                 <div className="heading">
                     <h2>Contact <span>Me!</span></h2>
                 </div>
@@ -92,6 +91,5 @@ export default function Contact(){
                     </div>
                 </div>
             </section>
-        </>
     )
 }

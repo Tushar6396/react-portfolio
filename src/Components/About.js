@@ -2,8 +2,8 @@ import Image from "../Images/image.jpg"
 
 export default function About(){
     return(
-        <>
-            <div className="heading">
+       <div>
+            <div className="heading" >
                 <h2>About <span>Me</span></h2>
             </div> 
             <section className="about">                       
@@ -20,7 +20,6 @@ export default function About(){
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>           
             </section>
-            
-        </>
+        </div>   
     )
 }

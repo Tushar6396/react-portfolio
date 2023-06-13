@@ -7,7 +7,7 @@ export default function Header(){
                 <h2 className="port">Port <span className="folio">folio</span></h2>
                 <nav className="navbar">
                     <a href="#home">
-                        <NavLink to="/home">Home</NavLink> 
+                        <NavLink to="/">Home</NavLink> 
                     </a>
                     <a href="#about">
                         <NavLink to="/about">About</NavLink>

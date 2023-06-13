@@ -7,22 +7,27 @@ import Services from './Components/Services';
 import Contact from './Components/Contact';
 import Error from './Components/Error';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 function App() {
   return (
+    <div className="app">
+    
     <BrowserRouter>
-      
-      <Routes>
-        <Route path='/' element={<Header />} >
-          <Route path='/home' element={<Home />} />
+      <Header />
+      <div className="content">
+        <Routes>
+          <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Services />} />
-          {/* <Route path='/projects' element={<Projects />} /> */}
           <Route path='/contact' element={<Contact />} />
           <Route path='*' element={<Error />} />
-        </Route>
-      </Routes>
+        </Routes>
+      </div>
+      {/* <Footer /> */}
     </BrowserRouter>
+
+    </div>
   );
 }
 
