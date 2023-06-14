@@ -9,25 +9,24 @@ import Error from './Components/Error';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
+
 function App() {
   return (
-    <div className="app">
-    
     <BrowserRouter>
-      <Header />
-      <div className="content">
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='*' element={<Error />} />
-        </Routes>
+      <div className="app">
+        <Header />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      {/* <Footer /> */}
     </BrowserRouter>
-
-    </div>
   );
 }
 

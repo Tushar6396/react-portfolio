@@ -1,5 +1,7 @@
 import Image from '../Images/image.jpg';
 
+// import './Home.css'
+
 export default function Home(){
     return(
         <section className="home">
